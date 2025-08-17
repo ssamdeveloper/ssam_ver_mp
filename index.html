@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+    rel="stylesheet" />
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript" src="script.js"></script>
+				
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Announcement -->
+  <div id="announcement" class="bg-blue-700 text-white p-2 text-center fixed w-full top-0 z-20 flex justify-between">
+    <div class="container mx-auto flex justify-between items-center gap-x-6">
+      <div class="flex flex-row gap-1 items-center text-sm">
+        <a href="mailto:admissions@ssamarikina.edu.ph" class="flex flex-row gap-3 items-center">
+          <span class="font-semibold">admissions@ssamarikina.edu.ph</span>
+        </a>
+        <span>|</span>
+        <a href="tel:+632 8941-9497" class="flex flex-row gap-3 items-center text-sm">
+          <span class="font-semibold">+632 8941-9497</span>
+        </a>
+      </div>
+      <div class="flex flex-row gap-x-2 items-center">
+        <button class="bg-white text-blue-700 text-xs px-2 py-1 rounded">
+          <span>Online Portal</span>
+        </button>
+        <button class="bg-blue-500 text-white text-xs px-2 py-1 rounded">
+          <span>Enroll Now</span>
+        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="navbar" class="text-blue-700 bg-white p-5 shadow fixed w-full z-10 transition-colors duration-300 top-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <span class="flex flex-row items-center gap-x-2">
+        <img src="images/HD LOGO 1.png" alt="ssam_logo" class="size-12" />
+        <h1 class="text-xl font-semibold">
+          St. Scholastica's Academy of Marikina
+        </h1>
+      </span>
+      <nav class="space-x-4">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#academic_programs" class="hover:underline">Academic Programs</a>
+        <a href="#news_and_events" class="hover:underline">News and Events</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#online_services" class="hover:underline">Online Services</a>
+        <a href="#gallery" class="hover:underline">Gallery</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Header Section -->
+  <section id="home" class="w-full pt-32 bg-gray-100">
+    <div
+      class="h-[31rem] content-center bg-[url(images/slide1_old.jpg)] bg-cover bg-center bg-black/40 bg-blend-overlay opacity-100 p-10">
+    </div>
+
+    <div class="container mx-auto flex flex-row items-start gap-x-20 py-10">
+      <div class="w-1/3">
+        <span class="text-5xl newsreader-titles font-[500] text-blue-700">
+          Benedictine Education: Mission Oriented, Values Enriched
+        </span>
+      </div>
+      <div class="flex flex-col w-1/2 text-blue-700">
+        <div class="text-md">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="flex flex-row gap-x-2 items-center mt-5">
+          <button class="bg-blue-700 text-white text-xs px-2 py-1 rounded">
+            <span>Enroll Now</span>
+          </button>
+          <button class="bg-gray-200 text-blue-700 text-xs px-2 py-1 rounded">
+            <span>Learn More</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="academic_programs" class=" bg-blue-700">
+
+    <div class="container mx-auto pt-36 pb-10">
+      <div class="mt-12 flex flex-row gap-x-10 justify-center">
+        <img src="images/image_placeholder.png" alt="" class="size-[21.25rem]" />
+
+        <div class="w-1/2">
+          <span class="flex flex-col justify-center mb-5 text-gray-200">
+            <span class="mb-5 flex flex-col font-[500] text-5xl newsreader-titles">
+              <span>Academic Excellence as</span>
+              <span>Social Responsibility</span>
+            </span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </span>
+          </span>
+          <button class="bg-blue-500 text-white text-xs px-2 py-1 rounded">
+            <span span>Learn More</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Programs1 -->
+  <section class="">
+
+    <div class="mt-10 mb-20 container mx-auto flex flex-row items-center">
+
+      <span class="w-2/5 flex flex-col font-[500] text-4xl newsreader-titles text-blue-700">
+        <span>Explore Our Comprehensive</span>
+        <span>Edcational Programs</span>
+      </span>
+
+      <span class="w-3/5 text-blue-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </span>
+    </div>
+
+    <div class="container mx-auto flex flex-row justify-center gap-x-10 mb-10">
+
+      <!-- grade school -->
+      <div class="max-w-sm bg-white border border-blue-200 rounded-lg hover:shadow-lg">
+
+        <div class="h-1/2">
+          <a href="#">
+            <img class="size-48 mx-auto" src="images/image_placeholder.png" alt="" />
+          </a>
+        </div>
+
+        <div class="h-1/2 p-5 bg-blue-700 rounded-b-lg">
+
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white newsreader-titles">Grade
+              School</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-200">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <a href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-300 rounded-lg hover:bg-blue-400 focus:ring-1 focus:outline-none focus:ring-blue-400 dark:bg-blue-400 dark:hover:bg-blue-600 dark:focus:ring-blue-400">
+            Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- junior high school -->
+      <div class="max-w-sm bg-white border border-blue-200 rounded-lg hover:shadow-lg">
+
+        <div class="h-1/2">
+          <a href="#">
+            <img class="size-48 mx-auto" src="images/image_placeholder.png" alt="" />
+          </a>
+        </div>
+
+        <div class="h-1/2 p-5 bg-blue-700 rounded-b-lg">
+
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white newsreader-titles">
+              Junior High School</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-200">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <a href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-300 rounded-lg hover:bg-blue-400 focus:ring-1 focus:outline-none focus:ring-blue-400 dark:bg-blue-400 dark:hover:bg-blue-600 dark:focus:ring-blue-400">
+            Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- senior high school -->
+      <div class="max-w-sm bg-white border border-blue-200 rounded-lg hover:shadow-lg">
+
+        <div class="h-1/2">
+          <a href="#">
+            <img class="size-48 mx-auto" src="images/image_placeholder.png" alt="" />
+          </a>
+        </div>
+
+        <div class="h-1/2 p-5 bg-blue-700 rounded-b-lg">
+
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white newsreader-titles">
+              Senior High School</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-200">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <a href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-300 rounded-lg hover:bg-blue-400 focus:ring-1 focus:outline-none focus:ring-blue-400 dark:bg-blue-400 dark:hover:bg-blue-600 dark:focus:ring-blue-400">
+            Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- News -->
+  <section id="news_and_events" class="pb-20 pt-40 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 newsreader-titles">News and Updates</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden">
+          <div class="w-full h-56 bg-blue-300">
+            <img class="size-48 mx-auto" src="images/image_placeholder.png" alt="" />
+          </div>
+          <div class="p-4">
+            <span class="bg-gray-300 font-semibold text-gray-700 text-xs px-2 py-1 rounded-lg">News</span>
+            <h3 class="font-semibold text-xl my-2 newsreader-titles">Title of News 1</h3>
+            <p class="text-sm text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+            <a href="#"
+              class="mt-2 inline-flex items-center px-2 py-1 text-sm font-medium text-center text-gray-700 rounded-lg hover:font-bold">
+              <!-- text-white bg-blue-300 hover:bg-blue-400 dark:bg-blue-400 dark:hover:bg-blue-600 dark:focus:ring-blue-400 -->
+              Read more
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="rtl:rotate-180 size-3.5 ms-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden">
+          <div class="w-full h-56 bg-blue-200">
+            <img class="size-48 mx-auto" src="images/image_placeholder.png" alt="" />
+          </div>
+          <div class="p-4">
+            <span class="bg-gray-300 font-semibold text-gray-700 text-xs px-2 py-1 rounded-lg">News</span>
+            <h3 class="font-semibold text-xl my-2 newsreader-titles">Title of News 2</h3>
+            <p class="text-sm text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+            <a href="#"
+              class="mt-2 inline-flex items-center px-2 py-1 text-sm font-medium text-center text-gray-700 rounded-lg hover:font-bold">
+              <!-- text-white bg-blue-300 hover:bg-blue-400 dark:bg-blue-400 dark:hover:bg-blue-600 dark:focus:ring-blue-400 -->
+              Read more
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="rtl:rotate-180 size-3.5 ms-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden">
+          <div class="w-full h-56 bg-blue-400">
+            <img class="size-48 mx-auto" src="images/image_placeholder.png" alt="" />
+          </div>
+          <div class="p-4">
+            <span class="bg-gray-300 font-semibold text-gray-700 text-xs px-2 py-1 rounded-lg">News</span>
+            <h3 class="font-semibold text-xl my-2 newsreader-titles">Title of News 3</h3>
+            <p class="text-sm text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+            <a href="#"
+              class="mt-2 inline-flex items-center px-2 py-1 text-sm font-medium text-center text-gray-700 rounded-lg hover:font-bold">
+              <!-- text-white bg-blue-300 hover:bg-blue-400 dark:bg-blue-400 dark:hover:bg-blue-600 dark:focus:ring-blue-400 -->
+              Read more
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="rtl:rotate-180 size-3.5 ms-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="flex items-center justify-center mt-16">
+      <button class="px-4 py-2 bg-gray-300 rounded-lg font-semibold">View All</button>
+    </div>
+
+  </section>
+
+  <!-- Testimonials -->
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <!-- Section Heading -->
+    <div class="mb-8">
+      <h2 class="text-4xl font-bold text-center mb-12 newsreader-titles">What our community says</h2>
+      <p class="text-gray-500 mt-2 max-w-2xl">
+        Hear what parents, alumnae, and other stakeholders have to say about their experiences with us.
+      </p>
+    </div>
+    <!-- Testimonials Grid -->
+    <div class="flex flex-row gap-8 ssam-community">
+
+      <!-- Card 1 -->
+      <div class="space-y-4">
+
+        <div class="text-yellow-500 text-lg flex">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+        </div>
+
+        <p class="text-sm">
+          "Attending this institution has truly transformed my academic journey. The rigorous curriculum and dedicated
+          faculty have inspired me to reach new heights in my studies."
+        </p>
+        <div class="flex items-center space-x-3">
+          
+          <div>
+            <p class="font-semibold text-sm">Name Surname</p>
+            <p class="text-xs text-gray-500">Alumnae, Batch 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="space-y-4">
+        <div class="text-yellow-500 text-lg flex">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <p class="text-sm">
+          As a parent, I appreciate how our school's strong academic environment, dedicated educators, and emphasis on
+          discipline and social responsibility prepare children for a successful future.
+        </p>
+        <div class="flex items-center space-x-3">
+          
+          <div>
+            <p class="font-semibold text-sm">Name Surname</p>
+            <p class="text-xs text-gray-500">Parent</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="space-y-4">
+        <div class="text-yellow-500 text-lg flex">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <p class="text-sm">
+          "As a current student, I've found the program to be incredibly enriching and supportive. The curriculum
+          challenges me while the faculty genuinely cares about our success."
+        </p>
+        <div class="flex items-center space-x-3">
+          
+          <div>
+            <p class="font-semibold text-sm">Name Surname</p>
+            <p class="text-xs text-gray-500">Student</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="space-y-4">
+        <div class="text-yellow-500 text-lg flex">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <p class="text-sm">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        </p>
+        <div class="flex items-center space-x-3">
+          
+          <div>
+            <p class="font-semibold text-sm">Name Surname</p>
+            <p class="text-xs text-gray-500">Student</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+  <section id="contact" class="py-20 bg-blue-700 text-white flex flex-col items-center justify-center">
+    <h2 class="mt-32 text-4xl font-bold mb-6 newsreader-titles">Join Our Academic Community</h2>
+
+    <p class="mb-10 mx-10 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <div class="flex gap-x-4">
+      <bbutton class="px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg hover:bg-gray-100">Learn More</bbutton>
+      <bbutton class="px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg hover:bg-gray-100">Visit Us</bbutton>
+    </div>
+  </section>
+
+  <!-- Affiliations -->
+  <section class="py-10 bg-white my-10">
+    <h2 class="text-2xl font-semibold mb-6 newsreader-titles text-center">Affiliations and Accreditations</h2>
+    <div class="flex flex-row gap-3 items-center justify-center">
+      <div class="w-[158px] h-20  rounded"><img src="images/deped_s.png" alt="" class="mx-auto"></div>
+      <div class="w-[158px] h-20  rounded"><img src="images/peac_s.png" alt="" class="mx-auto"></div>
+      <div class="w-[158px] h-20  rounded"><img src="images/ceap_s.png" alt="" class="mx-auto"></div>
+      <div class="w-[158px] h-20  rounded"><img src="images/dacsa_s.png" alt="" class="mx-auto"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="mb-4 italic text-5xl mt-20">
+        That in all things, God may be glorified"
+      </p>
+      <p class="text-xs font-light mt-20">© 2025 St. Scholastica's Academy of Marikina. All rights reserved. </p>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

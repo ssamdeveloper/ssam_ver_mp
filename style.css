@@ -1,0 +1,8 @@
+/* Smooth scroll & navbar style */
+body {
+  scroll-behavior: smooth;
+}
+
+.newsreader-titles {
+  font-family: "Newsreader", serif;
+}
